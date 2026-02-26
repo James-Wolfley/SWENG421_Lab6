@@ -26,6 +26,8 @@ partial class UserForm {
     /// </summary>
     private void InitializeComponent() {
         pnlToolbar = new System.Windows.Forms.Panel();
+        btnUpdateEdge = new System.Windows.Forms.Button();
+        btnUpdateVertex = new System.Windows.Forms.Button();
         btnAddEdge = new System.Windows.Forms.Button();
         btnAddVertex = new System.Windows.Forms.Button();
         btnDisplay = new System.Windows.Forms.Button();
@@ -43,6 +45,8 @@ partial class UserForm {
         // 
         // pnlToolbar
         // 
+        pnlToolbar.Controls.Add(btnUpdateEdge);
+        pnlToolbar.Controls.Add(btnUpdateVertex);
         pnlToolbar.Controls.Add(btnAddEdge);
         pnlToolbar.Controls.Add(btnAddVertex);
         pnlToolbar.Controls.Add(btnDisplay);
@@ -53,6 +57,26 @@ partial class UserForm {
         pnlToolbar.Name = "pnlToolbar";
         pnlToolbar.Size = new System.Drawing.Size(884, 45);
         pnlToolbar.TabIndex = 0;
+        // 
+        // btnUpdateEdge
+        // 
+        btnUpdateEdge.Location = new System.Drawing.Point(639, 3);
+        btnUpdateEdge.Name = "btnUpdateEdge";
+        btnUpdateEdge.Size = new System.Drawing.Size(100, 39);
+        btnUpdateEdge.TabIndex = 6;
+        btnUpdateEdge.Text = "Update Edge";
+        btnUpdateEdge.UseVisualStyleBackColor = true;
+        btnUpdateEdge.Click += btnUpdateEdge_Click;
+        // 
+        // btnUpdateVertex
+        // 
+        btnUpdateVertex.Location = new System.Drawing.Point(533, 3);
+        btnUpdateVertex.Name = "btnUpdateVertex";
+        btnUpdateVertex.Size = new System.Drawing.Size(100, 39);
+        btnUpdateVertex.TabIndex = 5;
+        btnUpdateVertex.Text = "Update Vertex";
+        btnUpdateVertex.UseVisualStyleBackColor = true;
+        btnUpdateVertex.Click += btnUpdateVertex_Click;
         // 
         // btnAddEdge
         // 
@@ -180,6 +204,9 @@ partial class UserForm {
         pnlLeft.ResumeLayout(false);
         ResumeLayout(false);
     }
+
+    private System.Windows.Forms.Button btnUpdateVertex;
+    private System.Windows.Forms.Button btnUpdateEdge;
 
     private System.Windows.Forms.Panel pnlCanvas;
 

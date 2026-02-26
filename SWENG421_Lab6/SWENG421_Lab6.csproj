@@ -15,6 +15,12 @@
       <Compile Update="UI\AddEdgeDialog.cs">
         <SubType>Form</SubType>
       </Compile>
+      <Compile Update="UI\UpdateEdgeDialog.cs">
+        <SubType>Form</SubType>
+      </Compile>
+      <Compile Update="UI\UpdateVertexDialog.cs">
+        <SubType>Form</SubType>
+      </Compile>
     </ItemGroup>
 
 </Project>
