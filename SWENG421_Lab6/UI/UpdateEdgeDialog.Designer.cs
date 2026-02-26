@@ -130,7 +130,7 @@ partial class UpdateEdgeDialog
         MaximizeBox = false;
         MinimizeBox = false;
         StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
-        Text = "Add Edge";
+        Text = "Update Edge";
         ((System.ComponentModel.ISupportInitialize)nudEdgeId).EndInit();
         ((System.ComponentModel.ISupportInitialize)nudFrom).EndInit();
         ((System.ComponentModel.ISupportInitialize)nudTo).EndInit();

@@ -19,13 +19,13 @@ public class Vertex {
 
     public void Drawing(Graphics g) {
         int radius = 20;
-        Rectangle rect = new Rectangle(X - radius, Y-radius, radius*2, radius*2);
+        Rectangle rect = new Rectangle(X - radius, Y - radius, radius * 2, radius * 2);
         g.FillEllipse(Brushes.LightBlue, rect);
         g.DrawEllipse(Pens.DarkBlue, rect);
         g.DrawString(VertexId.ToString(),
             new Font("Arial", 9, FontStyle.Bold),
-            Brushes.Black, X-7, Y-7);
+            Brushes.Black, X - 7, Y - 7);
     }
 
-    public override string ToString() =>$"V{VertexId} ({X},{Y})";
+    public override string ToString() => $"V{VertexId} ({X},{Y})";
 }
